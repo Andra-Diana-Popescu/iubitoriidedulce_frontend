@@ -1,0 +1,3220 @@
+* {
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#header {
+  /*meniu sus*/
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgba(59, 2, 50, 0.76);
+  height: 150px;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo-header {
+  position: relative;
+  /*logo-header*/
+  left: 20px;
+  top: 5px;
+  bottom: 5px;
+  width: 130px;
+  height: 130px;
+  border-radius: 60%;
+  box-shadow: 4px 4px 25px 2px black;
+}
+
+#logo-header:hover {
+  transform: scale(1.2);
+}
+
+#logo-header-desktop {
+  /*logo-header-desktop*/
+  display: none;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 60%;
+  box-shadow: 4px 4px 25px 2px black;
+}
+
+.toggle-button {
+  /*toggle-button*/
+  position: absolute;
+  top: 50px;
+  left: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50px;
+  height: 50px;
+}
+
+.toggle-button .bar {
+  /*toggle-button-bar*/
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.menu {
+  /*list items menu*/
+  display: none;
+  width: 100%;
+  padding-left: 0px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  top: 100px;
+}
+
+menu ul {
+  width: 100%;
+  flex-direction: column;
+}
+
+.menu.active {
+  /*menu active*/
+  display: flex;
+}
+
+.butoane-sus li {
+  text-align: center;
+}
+
+.butoane-sus {
+  /*butoane-sus*/
+  list-style-type: none;
+  display: block;
+  padding: 5px 5px;
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+  top: 90px;
+  width: 210px;
+  margin-left: -50px;
+}
+
+.inside-button {
+  padding: 10px;
+}
+
+.butoane-sus:hover {
+  padding: 5px 8px;
+  width: 210px;
+  border: 2px solid black;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #7c0462;
+  text-shadow: 2px 2px 4px black;
+  box-shadow: 0px 0px 11px 2px black;
+}
+
+#buton-login {
+  /*buton Log In*/
+  list-style-type: none;
+  background-color: #64b409;
+  text-shadow: 2px 2px 4px black;
+  color: white;
+  box-shadow: 0px 0px 11px 2px black;
+  border: 80px;
+  width: 120px;
+  height: 40px;
+  padding: 5px 5px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#buton-login:hover {
+  /*buton Log In hover*/
+  background-color: #760445;
+  cursor: pointer;
+}
+
+.menu-header-x {
+  background-color: rgba(59, 2, 50, 0.76);
+  /*menu-header-x*/
+  width: 100%;
+  height: 230px;
+  display: none;
+}
+
+.menu-header-x.active {
+  display: flex;
+}
+
+body {
+  background-image: url("desert3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0px;
+  padding: 0px;
+}
+
+#div-formular {
+  display: flex;
+}
+
+#formular {
+  /*formular*/
+  background-color: rgba(253, 253, 253, 0.699);
+  font-size: 20px;
+  padding: 20px;
+  margin: 10px;
+  width: 310px;
+  height: 420px;
+  font-weight: bold;
+  position: relative;
+  top: 50px;
+  bottom: 0px;
+  left: 0;
+  margin-bottom: 100px;
+  border-radius: 30px;
+  box-shadow: 0 0 18px 12px black;
+  border: 2px solid black;
+}
+
+legend {
+  color: #7c0462;
+  font-size: 30px;
+  text-shadow: 2px 2px 4px #0a0a0a;
+  text-align: center;
+}
+
+label {
+  color: #7c0462;
+  text-shadow: 2px 2px 4px black;
+}
+
+input[type] {
+  /*campuri formular*/
+  background-color: white;
+  width: 200px;
+  padding: 3px;
+  border-color: #b1accd;
+  border-width: thin;
+  border-style: solid;
+  border-radius: 10px;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+input::-moz-placeholder {
+  /*placeholder*/
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+input:-ms-input-placeholder {
+  /*placeholder*/
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+input::placeholder {
+  /*placeholder*/
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+input:focus {
+  background: rgba(150, 2, 155, 0.418);
+  transform: scale(1.05);
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input[type=submit] {
+  /*buton log in*/
+  background-color: #7c0462;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  box-shadow: 1px 1px 8px 1px #0c0b0b;
+  margin: 0.5px;
+  margin-left: 25px;
+  margin-top: 60px;
+  border: 80px;
+  width: 200px;
+  padding: 10px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+input[type=submit]:hover {
+  background-color: #760445;
+  cursor: pointer;
+}
+
+input[type=button] {
+  /*buton sign up*/
+  background-color: #7c0462;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  box-shadow: 1px 1px 8px 1px #0c0b0b;
+  margin: 0.5px;
+  margin-left: 25px;
+  border: 80px;
+  width: 200px;
+  padding: 10px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+input[type=button]:hover {
+  background-color: #760445;
+  cursor: pointer;
+}
+
+footer {
+  /*footer*/
+  position: relative;
+  top: 300px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #7c0462;
+  width: 100%;
+  height: 530px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+.footer-wrapper {
+  /*footer-wrapper*/
+  width: 100%;
+  position: absolute;
+}
+
+#logo-footer {
+  /*logo-footer*/
+  width: 150px;
+  height: 150px;
+  border-radius: 60%;
+  box-shadow: 4px 4px 25px 2px black;
+  position: absolute;
+  top: 30px;
+  left: 90px;
+}
+
+.footer-lower-deck {
+  /*footer-lower-deck*/
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  position: absolute;
+  top: 210px;
+}
+
+.location {
+  /*location*/
+  width: 150px;
+  height: 100px;
+  margin: 0px;
+  display: block;
+  padding: 10px;
+}
+
+.contact {
+  /*contact*/
+  width: 200px;
+  height: 150px;
+  margin: 0px;
+  display: block;
+  padding: 10px;
+}
+
+.social-media-links {
+  /*social-media-links*/
+  width: 270px;
+  height: 60px;
+  padding: 10px;
+}
+
+a {
+  /* a links*/
+  color: white;
+  padding: 10px;
+  position: relative;
+  left: -1px;
+  top: -1px;
+}
+
+.social-media-links a {
+  color: white;
+  padding: 10px;
+  position: relative;
+  left: -95px;
+  top: 20px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+.social-logo:hover {
+  /*iconite social media */
+  transform: scale(2);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  * {
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  #header {
+    /*meniu sus*/
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    background-color: rgba(59, 2, 50, 0.76);
+    height: 150px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #logo-header {
+    position: relative;
+    /*logo-header*/
+    left: 20px;
+    top: 5px;
+    bottom: 5px;
+    width: 130px;
+    height: 130px;
+    border-radius: 60%;
+    box-shadow: 4px 4px 25px 2px black;
+  }
+
+  #logo-header:hover {
+    transform: scale(1.2);
+  }
+
+  #logo-header-desktop {
+    /*logo-header-desktop*/
+    display: none;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 60%;
+    box-shadow: 4px 4px 25px 2px black;
+  }
+
+  .toggle-button {
+    /*toggle-button*/
+    position: absolute;
+    top: 50px;
+    left: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 50px;
+  }
+
+  .toggle-button .bar {
+    /*toggle-button-bar*/
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .menu {
+    /*list items menu*/
+    display: none;
+    width: 100%;
+    padding-left: 0px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    top: 100px;
+  }
+
+  menu ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .menu.active {
+    /*menu active*/
+    display: flex;
+  }
+
+  .butoane-sus li {
+    text-align: center;
+  }
+
+  .butoane-sus {
+    /*butoane-sus*/
+    list-style-type: none;
+    display: block;
+    padding: 5px 5px;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    top: 90px;
+    width: 210px;
+    margin-left: -50px;
+  }
+
+  .inside-button {
+    padding: 10px;
+  }
+
+  .butoane-sus:hover {
+    padding: 5px 8px;
+    width: 210px;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #7c0462;
+    text-shadow: 2px 2px 4px black;
+    box-shadow: 0px 0px 11px 2px black;
+  }
+
+  #buton-login {
+    /*buton Log In*/
+    list-style-type: none;
+    background-color: #64b409;
+    text-shadow: 2px 2px 4px black;
+    color: white;
+    box-shadow: 0px 0px 11px 2px black;
+    border: 80px;
+    width: 120px;
+    height: 40px;
+    padding: 5px 5px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  #buton-login:hover {
+    /*buton Log In hover*/
+    background-color: #760445;
+    cursor: pointer;
+  }
+
+  .menu-header-x {
+    background-color: rgba(59, 2, 50, 0.76);
+    /*menu-header-x*/
+    width: 100%;
+    height: 230px;
+    display: none;
+  }
+
+  .menu-header-x.active {
+    display: flex;
+  }
+
+  body {
+    background-image: url("desert3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #div-formular {
+    display: flex;
+  }
+
+  #formular {
+    /*formular*/
+    background-color: rgba(253, 253, 253, 0.699);
+    font-size: 20px;
+    padding: 20px;
+    margin: 10px;
+    width: 310px;
+    height: 420px;
+    font-weight: bold;
+    position: relative;
+    top: 50px;
+    bottom: 0px;
+    left: 0;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    box-shadow: 0 0 18px 12px black;
+    border: 2px solid black;
+  }
+
+  legend {
+    color: #7c0462;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px #0a0a0a;
+    text-align: center;
+  }
+
+  label {
+    color: #7c0462;
+    text-shadow: 2px 2px 4px black;
+  }
+
+  input[type] {
+    /*campuri formular*/
+    background-color: white;
+    width: 200px;
+    padding: 3px;
+    border-color: #b1accd;
+    border-width: thin;
+    border-style: solid;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  input::-moz-placeholder {
+    /*placeholder*/
+    color: black;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  input:-ms-input-placeholder {
+    /*placeholder*/
+    color: black;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  input::placeholder {
+    /*placeholder*/
+    color: black;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  input:focus {
+    background: rgba(150, 2, 155, 0.418);
+    transform: scale(1.05);
+  }
+
+  input:invalid {
+    border: 2px solid red;
+  }
+
+  input[type=submit] {
+    /*buton log in*/
+    background-color: #7c0462;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    box-shadow: 1px 1px 8px 1px #0c0b0b;
+    margin: 0.5px;
+    margin-left: 25px;
+    margin-top: 60px;
+    border: 80px;
+    width: 200px;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  input[type=submit]:hover {
+    background-color: #760445;
+    cursor: pointer;
+  }
+
+  input[type=button] {
+    /*buton sign up*/
+    background-color: #7c0462;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    box-shadow: 1px 1px 8px 1px #0c0b0b;
+    margin: 0.5px;
+    margin-left: 25px;
+    border: 80px;
+    width: 200px;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  input[type=button]:hover {
+    background-color: #760445;
+    cursor: pointer;
+  }
+
+  footer {
+    /*footer*/
+    position: relative;
+    top: 300px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #7c0462;
+    width: 100%;
+    height: 530px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+  }
+
+  .footer-wrapper {
+    /*footer-wrapper*/
+    width: 100%;
+    position: absolute;
+  }
+
+  #logo-footer {
+    /*logo-footer*/
+    width: 150px;
+    height: 150px;
+    border-radius: 60%;
+    box-shadow: 4px 4px 25px 2px black;
+    position: absolute;
+    top: 30px;
+    left: 90px;
+  }
+
+  .footer-lower-deck {
+    /*footer-lower-deck*/
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    position: absolute;
+    top: 210px;
+  }
+
+  .location {
+    /*location*/
+    width: 150px;
+    height: 100px;
+    margin: 0px;
+    display: block;
+    padding: 10px;
+  }
+
+  .contact {
+    /*contact*/
+    width: 200px;
+    height: 150px;
+    margin: 0px;
+    display: block;
+    padding: 10px;
+  }
+
+  .social-media-links {
+    /*social-media-links*/
+    width: 270px;
+    height: 60px;
+    padding: 10px;
+  }
+
+  a {
+    /* a links*/
+    color: white;
+    padding: 10px;
+    position: relative;
+    left: -1px;
+    top: -1px;
+  }
+
+  .social-media-links a {
+    color: white;
+    padding: 10px;
+    position: relative;
+    left: -95px;
+    top: 20px;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: white;
+  }
+
+  .social-logo:hover {
+    /*iconite social media */
+    transform: scale(2);
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  * {
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  #header {
+    /*meniu sus*/
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    background-color: rgba(59, 2, 50, 0.76);
+    height: 150px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #logo-header {
+    position: relative;
+    /*logo-header*/
+    left: 20px;
+    top: 5px;
+    bottom: 5px;
+    width: 130px;
+    height: 130px;
+    border-radius: 60%;
+    box-shadow: 4px 4px 25px 2px black;
+  }
+
+  #logo-header:hover {
+    transform: scale(1.2);
+  }
+
+  #logo-header-desktop {
+    /*logo-header-desktop*/
+    display: none;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 60%;
+    box-shadow: 4px 4px 25px 2px black;
+  }
+
+  .toggle-button {
+    /*toggle-button*/
+    position: absolute;
+    top: 50px;
+    left: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 50px;
+  }
+
+  .toggle-button .bar {
+    /*toggle-button-bar*/
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .menu {
+    /*list items menu*/
+    display: none;
+    width: 100%;
+    padding-left: 0px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    top: 100px;
+  }
+
+  menu ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .menu.active {
+    /*menu active*/
+    display: flex;
+  }
+
+  .butoane-sus li {
+    text-align: center;
+  }
+
+  .butoane-sus {
+    /*butoane-sus*/
+    list-style-type: none;
+    display: block;
+    padding: 5px 5px;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    top: 90px;
+    width: 210px;
+    margin-left: -50px;
+  }
+
+  .inside-button {
+    padding: 10px;
+  }
+
+  .butoane-sus:hover {
+    padding: 5px 8px;
+    width: 210px;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #7c0462;
+    text-shadow: 2px 2px 4px black;
+    box-shadow: 0px 0px 11px 2px black;
+  }
+
+  #buton-login {
+    /*buton Log In*/
+    list-style-type: none;
+    background-color: #64b409;
+    color: white;
+    box-shadow: 0px 0px 11px 2px black;
+    text-shadow: 2px 2px 4px black;
+    border: 80px;
+    width: 120px;
+    height: 40px;
+    padding: 5px 5px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  #buton-login:hover {
+    /*buton Log In hover*/
+    background-color: #760445;
+    cursor: pointer;
+  }
+
+  .menu-header-x {
+    background-color: rgba(59, 2, 50, 0.76);
+    /*menu-header-x*/
+    width: 100%;
+    height: 230px;
+    display: none;
+  }
+
+  .menu-header-x.active {
+    display: flex;
+  }
+
+  body {
+    background-image: url("desert3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #div-formular {
+    display: flex;
+  }
+
+  #formular {
+    /*formular*/
+    background-color: rgba(253, 253, 253, 0.699);
+    font-size: 20px;
+    padding: 20px;
+    margin: 20px;
+    width: 340px;
+    height: 370px;
+    font-weight: bold;
+    position: relative;
+    top: 50px;
+    bottom: 0px;
+    left: 0;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    box-shadow: 0 0 18px 12px black;
+    border: 2px solid black;
+  }
+
+  legend {
+    color: #7c0462;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px #0a0a0a;
+    text-align: center;
+  }
+
+  label {
+    color: #7c0462;
+    text-shadow: 2px 2px 4px black;
+  }
+
+  input[type] {
+    /*campuri formular*/
+    background-color: white;
+    width: 200px;
+    padding: 3px;
+    border-color: #b1accd;
+    border-width: thin;
+    border-style: solid;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  input::-moz-placeholder {
+    /*placeholder*/
+    color: black;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  input:-ms-input-placeholder {
+    /*placeholder*/
+    color: black;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  input::placeholder {
+    /*placeholder*/
+    color: black;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  input:focus {
+    background: rgba(150, 2, 155, 0.418);
+    transform: scale(1.05);
+  }
+
+  input:invalid {
+    border: 2px solid red;
+  }
+
+  input[type=submit] {
+    /*buton log in*/
+    background-color: #7c0462;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    box-shadow: 1px 1px 8px 1px #0c0b0b;
+    margin: 0.5px;
+    margin-left: 50px;
+    margin-top: 60px;
+    border: 80px;
+    width: 200px;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  input[type=submit]:hover {
+    background-color: #760445;
+    cursor: pointer;
+  }
+
+  input[type=button] {
+    /*buton sign up*/
+    background-color: #7c0462;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    box-shadow: 1px 1px 8px 1px #0c0b0b;
+    margin: 0.5px;
+    margin-left: 50px;
+    border: 80px;
+    width: 200px;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  input[type=button]:hover {
+    background-color: #760445;
+    cursor: pointer;
+  }
+
+  footer {
+    /*footer*/
+    position: relative;
+    top: 300px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #7c0462;
+    width: 100%;
+    height: 530px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+  }
+
+  .footer-wrapper {
+    /*footer-wrapper*/
+    width: 100%;
+    position: absolute;
+  }
+
+  #logo-footer {
+    /*logo-footer*/
+    width: 150px;
+    height: 150px;
+    border-radius: 60%;
+    box-shadow: 4px 4px 25px 2px black;
+    position: absolute;
+    top: 30px;
+    left: 120px;
+  }
+
+  .footer-lower-deck {
+    /*footer-lower-deck*/
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    position: absolute;
+    top: 210px;
+  }
+
+  .location {
+    /*location*/
+    width: 150px;
+    height: 100px;
+    margin: 0px;
+    display: block;
+    padding: 10px;
+  }
+
+  .contact {
+    /*contact*/
+    width: 200px;
+    height: 150px;
+    margin: 0px;
+    display: block;
+    padding: 10px;
+  }
+
+  .social-media-links {
+    /*social-media-links*/
+    width: 270px;
+    height: 60px;
+    padding: 10px;
+  }
+
+  a {
+    /* a links*/
+    color: white;
+    padding: 10px;
+    position: relative;
+    left: -1px;
+    top: -1px;
+  }
+
+  .social-media-links a {
+    color: white;
+    padding: 10px;
+    position: relative;
+    left: -95px;
+    top: 20px;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: white;
+  }
+
+  .social-logo:hover {
+    /*iconite social media */
+    transform: scale(2);
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  * {
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  #header {
+    /*meniu sus*/
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    background-color: rgba(59, 2, 50, 0.76);
+    height: 150px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #logo-header {
+    position: relative;
+    /*logo-header*/
+    left: 20px;
+    top: 5px;
+    bottom: 5px;
+    width: 130px;
+    height: 130px;
+    border-radius: 60%;
+    box-shadow: 4px 4px 25px 2px black;
+  }
+
+  #logo-header:hover {
+    transform: scale(1.2);
+  }
+
+  #logo-header-desktop {
+    /*logo-header-desktop*/
+    display: none;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 60%;
+    box-shadow: 4px 4px 25px 2px black;
+  }
+
+  .toggle-button {
+    /*toggle-button*/
+    position: absolute;
+    top: 50px;
+    left: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 50px;
+  }
+
+  .toggle-button .bar {
+    /*toggle-button-bar*/
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .menu {
+    /*list items menu*/
+    display: none;
+    width: 100%;
+    padding-left: 0px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    top: 100px;
+  }
+
+  menu ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .menu.active {
+    /*menu active*/
+    display: flex;
+  }
+
+  .butoane-sus li {
+    text-align: center;
+  }
+
+  .butoane-sus {
+    /*butoane-sus*/
+    list-style-type: none;
+    display: block;
+    padding: 5px 5px;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    top: 90px;
+    width: 210px;
+    margin-left: -50px;
+  }
+
+  .inside-button {
+    padding: 10px;
+  }
+
+  .butoane-sus:hover {
+    padding: 5px 8px;
+    width: 210px;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #7c0462;
+    text-shadow: 2px 2px 4px black;
+    box-shadow: 0px 0px 11px 2px black;
+  }
+
+  #buton-login {
+    /*buton Log In*/
+    list-style-type: none;
+    background-color: #64b409;
+    color: white;
+    box-shadow: 0px 0px 11px 2px black;
+    text-shadow: 2px 2px 4px black;
+    border: 80px;
+    width: 120px;
+    height: 40px;
+    padding: 5px 5px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  #buton-login:hover {
+    /*buton Log In hover*/
+    background-color: #760445;
+    cursor: pointer;
+  }
+
+  .menu-header-x {
+    background-color: rgba(59, 2, 50, 0.76);
+    /*menu-header-x*/
+    width: 100%;
+    height: 230px;
+    display: none;
+  }
+
+  .menu-header-x.active {
+    display: flex;
+  }
+
+  body {
+    background-image: url("desert3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #div-formular {
+    display: flex;
+  }
+
+  #formular {
+    /*formular*/
+    background-color: rgba(253, 253, 253, 0.699);
+    font-size: 20px;
+    padding: 20px;
+    margin: 35px;
+    width: 400px;
+    height: 350px;
+    font-weight: bold;
+    position: relative;
+    top: 50px;
+    bottom: 0px;
+    left: 0;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    box-shadow: 0 0 18px 12px black;
+    border: 2px solid black;
+  }
+
+  legend {
+    color: #7c0462;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px #0a0a0a;
+    text-align: center;
+  }
+
+  label {
+    color: #7c0462;
+    text-shadow: 2px 2px 4px black;
+  }
+
+  input[type] {
+    /*campuri formular*/
+    background-color: white;
+    width: 200px;
+    padding: 3px;
+    border-color: #b1accd;
+    border-width: thin;
+    border-style: solid;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  input::-moz-placeholder {
+    /*placeholder*/
+    color: black;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  input:-ms-input-placeholder {
+    /*placeholder*/
+    color: black;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  input::placeholder {
+    /*placeholder*/
+    color: black;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  input:focus {
+    background: rgba(150, 2, 155, 0.418);
+    transform: scale(1.05);
+  }
+
+  input:invalid {
+    border: 2px solid red;
+  }
+
+  input[type=submit] {
+    /*buton log in*/
+    background-color: #7c0462;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    box-shadow: 1px 1px 8px 1px #0c0b0b;
+    margin: 0.5px;
+    margin-left: 53px;
+    margin-top: 60px;
+    border: 80px;
+    width: 200px;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  input[type=submit]:hover {
+    background-color: #760445;
+    cursor: pointer;
+  }
+
+  input[type=button] {
+    /*buton sign up*/
+    background-color: #7c0462;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    box-shadow: 1px 1px 8px 1px #0c0b0b;
+    margin: 0.5px;
+    margin-left: 53px;
+    border: 80px;
+    width: 200px;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  input[type=button]:hover {
+    background-color: #760445;
+    cursor: pointer;
+  }
+
+  footer {
+    /*footer*/
+    position: relative;
+    top: 300px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #7c0462;
+    width: 100%;
+    height: 530px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+  }
+
+  .footer-wrapper {
+    /*footer-wrapper*/
+    width: 100%;
+    position: absolute;
+  }
+
+  #logo-footer {
+    /*logo-footer*/
+    width: 150px;
+    height: 150px;
+    border-radius: 60%;
+    box-shadow: 4px 4px 25px 2px black;
+    position: absolute;
+    top: 30px;
+    left: 150px;
+  }
+
+  .footer-lower-deck {
+    /*footer-lower-deck*/
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    position: absolute;
+    top: 210px;
+  }
+
+  .location {
+    /*location*/
+    width: 150px;
+    height: 100px;
+    margin: 0px;
+    display: block;
+    padding: 10px;
+  }
+
+  .contact {
+    /*contact*/
+    width: 200px;
+    height: 150px;
+    margin: 0px;
+    display: block;
+    padding: 10px;
+  }
+
+  .social-media-links {
+    /*social-media-links*/
+    width: 270px;
+    height: 60px;
+    padding: 10px;
+  }
+
+  a {
+    /* a links*/
+    color: white;
+    padding: 10px;
+    position: relative;
+    left: -1px;
+    top: -1px;
+  }
+
+  .social-media-links a {
+    color: white;
+    padding: 10px;
+    position: relative;
+    left: -95px;
+    top: 20px;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: white;
+  }
+
+  .social-logo:hover {
+    /*iconite social media */
+    transform: scale(2);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  * {
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  #header {
+    /*meniu sus*/
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    background-color: rgba(59, 2, 50, 0.76);
+    height: 150px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #logo-header {
+    position: relative;
+    /*logo-header*/
+    left: 20px;
+    top: 5px;
+    bottom: 5px;
+    width: 130px;
+    height: 130px;
+    border-radius: 60%;
+    box-shadow: 4px 4px 25px 2px black;
+  }
+
+  #logo-header:hover {
+    transform: scale(1.2);
+  }
+
+  #logo-header-desktop {
+    /*logo-header-desktop*/
+    display: none;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 60%;
+    box-shadow: 4px 4px 25px 2px black;
+  }
+
+  .toggle-button {
+    /*toggle-button*/
+    position: absolute;
+    top: 50px;
+    left: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 50px;
+  }
+
+  .toggle-button .bar {
+    /*toggle-button-bar*/
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .menu {
+    /*list items menu*/
+    display: none;
+    width: 100%;
+    padding-left: 0px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    top: 100px;
+  }
+
+  menu ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .menu.active {
+    /*menu active*/
+    display: flex;
+  }
+
+  .butoane-sus li {
+    text-align: center;
+  }
+
+  .butoane-sus {
+    /*butoane-sus*/
+    list-style-type: none;
+    display: block;
+    padding: 5px 5px;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    top: 90px;
+    width: 210px;
+    margin-left: -50px;
+  }
+
+  .inside-button {
+    padding: 10px;
+  }
+
+  .butoane-sus:hover {
+    padding: 5px 8px;
+    width: 210px;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #7c0462;
+    text-shadow: 2px 2px 4px black;
+    box-shadow: 0px 0px 11px 2px black;
+  }
+
+  #buton-login {
+    /*buton Log In*/
+    list-style-type: none;
+    background-color: #64b409;
+    color: white;
+    box-shadow: 0px 0px 11px 2px black;
+    text-shadow: 2px 2px 4px black;
+    border: 80px;
+    width: 120px;
+    height: 40px;
+    padding: 5px 5px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  #buton-login:hover {
+    /*buton Log In hover*/
+    background-color: #760445;
+    cursor: pointer;
+  }
+
+  .menu-header-x {
+    background-color: rgba(59, 2, 50, 0.76);
+    /*menu-header-x*/
+    width: 100%;
+    height: 230px;
+    display: none;
+  }
+
+  .menu-header-x.active {
+    display: flex;
+  }
+
+  body {
+    background-image: url("desert3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #div-formular {
+    display: flex;
+  }
+
+  #formular {
+    /*formular*/
+    background-color: rgba(253, 253, 253, 0.699);
+    font-size: 20px;
+    padding: 20px;
+    margin: 20px;
+    width: 440px;
+    height: 520px;
+    font-weight: bold;
+    position: relative;
+    top: 50px;
+    bottom: 0px;
+    left: 180px;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    box-shadow: 0 0 18px 12px black;
+    border: 2px solid black;
+  }
+
+  legend {
+    color: #7c0462;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px #0a0a0a;
+    text-align: center;
+  }
+
+  label {
+    color: #7c0462;
+    text-shadow: 2px 2px 4px black;
+    font-size: 25px;
+  }
+
+  input[type] {
+    /*campuri formular*/
+    background-color: white;
+    width: 310px;
+    padding: 3px;
+    border-color: #b1accd;
+    border-width: thin;
+    border-style: solid;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  input::-moz-placeholder {
+    /*placeholder*/
+    color: black;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  input:-ms-input-placeholder {
+    /*placeholder*/
+    color: black;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  input::placeholder {
+    /*placeholder*/
+    color: black;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  input:focus {
+    background: rgba(150, 2, 155, 0.418);
+    transform: scale(1.05);
+  }
+
+  input:invalid {
+    border: 2px solid red;
+  }
+
+  input[type=submit] {
+    /*buton log in*/
+    background-color: #7c0462;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    box-shadow: 1px 1px 8px 1px #0c0b0b;
+    margin: 0.5px;
+    margin-left: 100px;
+    margin-top: 60px;
+    border: 80px;
+    width: 200px;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    top: 70px;
+  }
+
+  hr {
+    position: relative;
+    top: 75px;
+  }
+
+  input[type=submit]:hover {
+    background-color: #760445;
+    cursor: pointer;
+  }
+
+  input[type=button] {
+    /*buton sign up*/
+    background-color: #7c0462;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    box-shadow: 1px 1px 8px 1px #0c0b0b;
+    margin: 0.5px;
+    margin-left: 100px;
+    border: 80px;
+    width: 200px;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    top: 80px;
+  }
+
+  input[type=button]:hover {
+    background-color: #760445;
+    cursor: pointer;
+  }
+
+  footer {
+    /*footer*/
+    position: relative;
+    top: 300px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #7c0462;
+    width: 100%;
+    height: 670px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+  }
+
+  .footer-wrapper {
+    /*footer-wrapper*/
+    width: 100%;
+    position: absolute;
+  }
+
+  #logo-footer {
+    /*logo-footer*/
+    width: 200px;
+    height: 200px;
+    border-radius: 60%;
+    box-shadow: 4px 4px 25px 2px black;
+    position: absolute;
+    top: 30px;
+    left: 320px;
+  }
+
+  .footer-lower-deck {
+    /*footer-lower-deck*/
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    position: absolute;
+    top: 270px;
+    left: 270px;
+    font-size: 20px;
+  }
+
+  .location {
+    /*location*/
+    width: 200px;
+    height: 130px;
+    margin: 0px;
+    display: block;
+    padding: 10px;
+  }
+
+  .contact {
+    /*contact*/
+    width: 250px;
+    height: 190px;
+    margin: 0px;
+    display: block;
+    padding: 10px;
+  }
+
+  .social-media-links {
+    /*social-media-links*/
+    width: 320px;
+    height: 80px;
+    padding: 10px;
+  }
+
+  a {
+    /* a links*/
+    color: white;
+    padding: 10px;
+    position: relative;
+    left: -1px;
+    top: -1px;
+  }
+
+  .social-media-links a {
+    color: white;
+    padding: 10px;
+    position: relative;
+    left: -95px;
+    top: 20px;
+  }
+
+  a:hover {
+    color: white;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+  .social-logo:hover {
+    /*iconite social media */
+    transform: scale(2);
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  * {
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  #header {
+    /*meniu sus*/
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    background-color: rgba(59, 2, 50, 0.76);
+    height: 150px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #logo-header {
+    position: relative;
+    /*logo-header*/
+    left: 20px;
+    top: 5px;
+    bottom: 5px;
+    width: 130px;
+    height: 130px;
+    border-radius: 60%;
+    box-shadow: 4px 4px 25px 2px black;
+  }
+
+  #logo-header:hover {
+    transform: scale(1.2);
+  }
+
+  #logo-header-desktop {
+    /*logo-header-desktop*/
+    display: none;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 60%;
+    box-shadow: 4px 4px 25px 2px black;
+  }
+
+  .toggle-button {
+    /*toggle-button*/
+    position: absolute;
+    top: 50px;
+    left: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 50px;
+  }
+
+  .toggle-button .bar {
+    /*toggle-button-bar*/
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .menu {
+    /*list items menu*/
+    display: none;
+    width: 100%;
+    padding-left: 0px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    top: 100px;
+  }
+
+  menu ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .menu.active {
+    /*menu active*/
+    display: flex;
+  }
+
+  .butoane-sus li {
+    text-align: center;
+  }
+
+  .butoane-sus {
+    /*butoane-sus*/
+    list-style-type: none;
+    display: block;
+    padding: 5px 5px;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    top: 90px;
+    width: 210px;
+    margin-left: -50px;
+  }
+
+  .inside-button {
+    padding: 10px;
+  }
+
+  .butoane-sus:hover {
+    padding: 5px 8px;
+    width: 210px;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #7c0462;
+    text-shadow: 2px 2px 4px black;
+    box-shadow: 0px 0px 11px 2px black;
+  }
+
+  #buton-login {
+    /*buton Log In*/
+    list-style-type: none;
+    background-color: #64b409;
+    color: white;
+    box-shadow: 0px 0px 11px 2px black;
+    text-shadow: 2px 2px 4px black;
+    border: 80px;
+    width: 120px;
+    height: 40px;
+    padding: 5px 5px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  #buton-login:hover {
+    /*buton Log In hover*/
+    background-color: #760445;
+    cursor: pointer;
+  }
+
+  .menu-header-x {
+    background-color: rgba(59, 2, 50, 0.76);
+    /*menu-header-x*/
+    width: 100%;
+    height: 230px;
+    display: none;
+  }
+
+  .menu-header-x.active {
+    display: flex;
+  }
+
+  body {
+    background-image: url("desert3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #div-formular {
+    display: flex;
+  }
+
+  #formular {
+    /*formular*/
+    background-color: rgba(253, 253, 253, 0.699);
+    font-size: 20px;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 20px;
+    width: 800px;
+    height: 600px;
+    font-weight: bold;
+    position: relative;
+    top: 50px;
+    bottom: 0px;
+    left: 100px;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    box-shadow: 0 0 18px 12px black;
+    border: 2px solid black;
+  }
+
+  legend {
+    color: #7c0462;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px #0a0a0a;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  label {
+    color: #7c0462;
+    text-shadow: 2px 2px 4px black;
+    font-size: 25px;
+    position: relative;
+    top: 40px;
+    left: 50px;
+  }
+
+  input[type] {
+    /*campuri formular*/
+    background-color: white;
+    width: 310px;
+    padding: 3px;
+    border-color: #b1accd;
+    border-width: thin;
+    border-style: solid;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 230px;
+    top: 10px;
+    display: block;
+  }
+
+  input::-moz-placeholder {
+    /*placeholder*/
+    color: black;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  input:-ms-input-placeholder {
+    /*placeholder*/
+    color: black;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  input::placeholder {
+    /*placeholder*/
+    color: black;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  input:focus {
+    background: rgba(150, 2, 155, 0.418);
+    transform: scale(1.05);
+  }
+
+  input:invalid {
+    border: 2px solid red;
+  }
+
+  input[type=submit] {
+    /*buton log in*/
+    background-color: #7c0462;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    box-shadow: 1px 1px 8px 1px #0c0b0b;
+    margin: 0.5px;
+    margin-left: 100px;
+    margin-top: 60px;
+    border: 80px;
+    width: 200px;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    top: 40px;
+    left: 190px;
+  }
+
+  hr {
+    position: relative;
+    top: 55px;
+  }
+
+  input[type=submit]:hover {
+    background-color: #760445;
+    cursor: pointer;
+  }
+
+  input[type=button] {
+    /*buton sign up*/
+    background-color: #7c0462;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    box-shadow: 1px 1px 8px 1px #0c0b0b;
+    margin: 0.5px;
+    margin-left: 100px;
+    border: 80px;
+    width: 200px;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    top: 80px;
+    left: 190px;
+  }
+
+  input[type=button]:hover {
+    background-color: #760445;
+    cursor: pointer;
+  }
+
+  footer {
+    /*footer*/
+    position: relative;
+    top: 320px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #7c0462;
+    width: 100%;
+    height: 270px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+  }
+
+  .footer-wrapper {
+    /*footer-wrapper*/
+    width: 100%;
+    position: absolute;
+  }
+
+  #logo-footer {
+    /*logo-footer*/
+    width: 200px;
+    height: 200px;
+    border-radius: 60%;
+    box-shadow: 4px 4px 25px 2px black;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+  }
+
+  .footer-lower-deck {
+    /*footer-lower-deck*/
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    position: absolute;
+    top: 270px;
+    left: 270px;
+    font-size: 20px;
+  }
+
+  .location {
+    /*location*/
+    width: 200px;
+    height: 130px;
+    margin: 10px;
+    display: block;
+    position: absolute;
+    left: -40px;
+    top: -200px;
+  }
+
+  .contact {
+    /*contact*/
+    width: 250px;
+    height: 190px;
+    margin: 5px;
+    display: block;
+    padding: 5px;
+    position: absolute;
+    top: -210px;
+    left: 160px;
+  }
+
+  .social-media-links {
+    /*social-media-links*/
+    width: 310px;
+    height: 80px;
+    padding: 5px;
+    display: inline;
+    position: absolute;
+    top: -210px;
+    left: 400px;
+    margin: 5px;
+  }
+
+  a {
+    /* a links*/
+    color: white;
+    padding: 10px;
+    position: relative;
+    left: -1px;
+    top: -1px;
+  }
+
+  .social-media-links a {
+    color: white;
+    padding: 10px;
+    position: relative;
+    left: -95px;
+    top: 20px;
+  }
+
+  a:hover {
+    color: white;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+  .social-logo:hover {
+    /*iconite social media */
+    transform: scale(2);
+  }
+}
+@media only screen and (min-width: 1440px) and (max-width: 2559px) {
+  * {
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  #header {
+    /*meniu sus*/
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    background-color: rgba(59, 2, 50, 0.76);
+    height: 150px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #logo-header {
+    position: relative;
+    /*logo-header*/
+    left: 20px;
+    top: 5px;
+    bottom: 5px;
+    width: 130px;
+    height: 130px;
+    border-radius: 60%;
+    box-shadow: 4px 4px 25px 2px black;
+  }
+
+  #logo-header:hover {
+    transform: scale(1.2);
+  }
+
+  #logo-header-desktop {
+    /*logo-header-desktop*/
+    display: none;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 60%;
+    box-shadow: 4px 4px 25px 2px black;
+  }
+
+  .toggle-button {
+    /*toggle-button*/
+    position: absolute;
+    top: 50px;
+    left: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 50px;
+  }
+
+  .toggle-button .bar {
+    /*toggle-button-bar*/
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .menu {
+    /*list items menu*/
+    display: none;
+    width: 100%;
+    padding-left: 0px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    top: 100px;
+  }
+
+  menu ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .menu.active {
+    /*menu active*/
+    display: flex;
+  }
+
+  .butoane-sus li {
+    text-align: center;
+  }
+
+  .butoane-sus {
+    /*butoane-sus*/
+    list-style-type: none;
+    display: block;
+    padding: 5px 5px;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    top: 90px;
+    width: 210px;
+    margin-left: -50px;
+  }
+
+  .inside-button {
+    padding: 10px;
+  }
+
+  .butoane-sus:hover {
+    padding: 5px 8px;
+    width: 210px;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #7c0462;
+    text-shadow: 2px 2px 4px black;
+    box-shadow: 0px 0px 11px 2px black;
+  }
+
+  #buton-login {
+    /*buton Log In*/
+    list-style-type: none;
+    background-color: #64b409;
+    color: white;
+    box-shadow: 0px 0px 11px 2px black;
+    text-shadow: 2px 2px 4px black;
+    border: 80px;
+    width: 120px;
+    height: 40px;
+    padding: 5px 5px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  #buton-login:hover {
+    /*buton Log In hover*/
+    background-color: #760445;
+    cursor: pointer;
+  }
+
+  .menu-header-x {
+    background-color: rgba(59, 2, 50, 0.76);
+    /*menu-header-x*/
+    width: 100%;
+    height: 230px;
+    display: none;
+  }
+
+  .menu-header-x.active {
+    display: flex;
+  }
+
+  body {
+    background-image: url("desert3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #div-formular {
+    display: flex;
+  }
+
+  #formular {
+    /*formular*/
+    background-color: rgba(253, 253, 253, 0.699);
+    font-size: 20px;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 20px;
+    width: 800px;
+    height: 600px;
+    font-weight: bold;
+    position: relative;
+    top: 50px;
+    bottom: 0px;
+    left: 300px;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    box-shadow: 0 0 18px 12px black;
+    border: 2px solid black;
+  }
+
+  legend {
+    color: #7c0462;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px #0a0a0a;
+    text-align: center;
+  }
+
+  label {
+    color: #7c0462;
+    text-shadow: 2px 2px 4px black;
+    font-size: 25px;
+    position: relative;
+    top: 43px;
+    left: 50px;
+  }
+
+  input[type] {
+    /*campuri formular*/
+    background-color: white;
+    width: 310px;
+    padding: 3px;
+    border-color: #b1accd;
+    border-width: thin;
+    border-style: solid;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 230px;
+    top: 10px;
+    display: block;
+  }
+
+  input::-moz-placeholder {
+    /*placeholder*/
+    color: black;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  input:-ms-input-placeholder {
+    /*placeholder*/
+    color: black;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  input::placeholder {
+    /*placeholder*/
+    color: black;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  input:focus {
+    background: rgba(150, 2, 155, 0.418);
+    transform: scale(1.05);
+  }
+
+  input:invalid {
+    border: 2px solid red;
+  }
+
+  input[type=submit] {
+    /*buton log in*/
+    background-color: #7c0462;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    box-shadow: 1px 1px 8px 1px #0c0b0b;
+    margin: 0.5px;
+    margin-top: 60px;
+    margin-left: 100px;
+    border: 80px;
+    width: 200px;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    top: 40px;
+    left: 190px;
+  }
+
+  hr {
+    position: relative;
+    top: 55px;
+  }
+
+  input[type=submit]:hover {
+    background-color: #760445;
+    cursor: pointer;
+  }
+
+  input[type=button] {
+    /*buton sign up*/
+    background-color: #7c0462;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    box-shadow: 1px 1px 8px 1px #0c0b0b;
+    margin: 0.5px;
+    margin-left: 100px;
+    border: 80px;
+    width: 200px;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    top: 80px;
+    left: 190px;
+  }
+
+  input[type=button]:hover {
+    background-color: #760445;
+    cursor: pointer;
+  }
+
+  footer {
+    /*footer*/
+    position: relative;
+    top: 320px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #7c0462;
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+  }
+
+  .footer-wrapper {
+    /*footer-wrapper*/
+    width: 100%;
+    position: absolute;
+  }
+
+  #logo-footer {
+    /*logo-footer*/
+    width: 200px;
+    height: 200px;
+    border-radius: 60%;
+    box-shadow: 4px 4px 25px 2px black;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+  }
+
+  .footer-lower-deck {
+    /*footer-lower-deck*/
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    position: absolute;
+    top: 270px;
+    left: 270px;
+    font-size: 20px;
+  }
+
+  .location {
+    /*location*/
+    width: 200px;
+    height: 130px;
+    margin: 10px;
+    display: block;
+    position: absolute;
+    left: 40px;
+    top: -200px;
+  }
+
+  .contact {
+    /*contact*/
+    width: 250px;
+    height: 190px;
+    margin: 10px;
+    display: block;
+    padding: 10px;
+    position: absolute;
+    top: -210px;
+    left: 300px;
+  }
+
+  .social-media-links {
+    /*social-media-links*/
+    width: 320px;
+    height: 80px;
+    padding: 10px;
+    display: flex;
+    position: absolute;
+    top: -210px;
+    left: 600px;
+    margin: 10px;
+  }
+
+  a {
+    /* a links*/
+    color: white;
+    padding: 10px;
+    position: relative;
+    left: -1px;
+    top: -1px;
+  }
+
+  .social-media-links a {
+    color: white;
+    padding: 10px;
+    position: relative;
+    left: -95px;
+    top: 20px;
+  }
+
+  a:hover {
+    color: white;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+  .social-logo:hover {
+    /*iconite social media */
+    transform: scale(2);
+  }
+}
+@media only screen and (min-width: 2560px) {
+  * {
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  #header {
+    /*meniu sus*/
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    background-color: rgba(59, 2, 50, 0.76);
+    height: 150px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #logo-header {
+    position: relative;
+    /*logo-header*/
+    left: 20px;
+    top: 5px;
+    bottom: 5px;
+    width: 130px;
+    height: 130px;
+    border-radius: 60%;
+    box-shadow: 4px 4px 25px 2px black;
+  }
+
+  #logo-header:hover {
+    transform: scale(1.2);
+  }
+
+  #logo-header-desktop {
+    /*logo-header-desktop*/
+    display: none;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 60%;
+    box-shadow: 4px 4px 25px 2px black;
+  }
+
+  .toggle-button {
+    /*toggle-button*/
+    position: absolute;
+    top: 50px;
+    left: 1700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 50px;
+  }
+
+  .toggle-button .bar {
+    /*toggle-button-bar*/
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .menu {
+    /*list items menu*/
+    display: none;
+    width: 100%;
+    padding-left: 0px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    top: 100px;
+  }
+
+  menu ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .menu.active {
+    /*menu active*/
+    display: flex;
+  }
+
+  .butoane-sus li {
+    text-align: center;
+  }
+
+  .butoane-sus {
+    /*butoane-sus*/
+    list-style-type: none;
+    display: block;
+    padding: 5px 5px;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    top: 90px;
+    width: 250px;
+    margin-left: -50px;
+  }
+
+  .inside-button {
+    padding: 10px;
+  }
+
+  .butoane-sus:hover {
+    padding: 5px 8px;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #7c0462;
+    text-shadow: 2px 2px 4px black;
+    box-shadow: 0px 0px 11px 2px black;
+  }
+
+  #buton-login {
+    /*buton Log In*/
+    list-style-type: none;
+    background-color: #64b409;
+    color: white;
+    box-shadow: 0px 0px 11px 2px black;
+    text-shadow: 2px 2px 4px black;
+    border: 80px;
+    width: 120px;
+    height: 40px;
+    padding: 5px 5px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  #buton-login:hover {
+    /*buton Log In hover*/
+    background-color: #760445;
+    cursor: pointer;
+  }
+
+  .menu-header-x {
+    background-color: rgba(59, 2, 50, 0.76);
+    /*menu-header-x*/
+    width: 100%;
+    height: 230px;
+    display: none;
+  }
+
+  .menu-header-x.active {
+    display: flex;
+  }
+
+  body {
+    background-image: url("desert3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #div-formular {
+    display: flex;
+  }
+
+  #formular {
+    /*formular*/
+    background-color: rgba(253, 253, 253, 0.699);
+    font-size: 20px;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 20px;
+    width: 800px;
+    height: 600px;
+    font-weight: bold;
+    position: relative;
+    top: 50px;
+    bottom: 0px;
+    left: 600px;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    box-shadow: 0 0 18px 12px black;
+    border: 2px solid black;
+  }
+
+  legend {
+    color: #7c0462;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px #0a0a0a;
+    text-align: center;
+  }
+
+  label {
+    color: #7c0462;
+    text-shadow: 2px 2px 4px black;
+    font-size: 25px;
+    position: relative;
+    top: 43px;
+    left: 50px;
+  }
+
+  input[type] {
+    /*campuri formular*/
+    background-color: white;
+    width: 310px;
+    padding: 3px;
+    border-color: #b1accd;
+    border-width: thin;
+    border-style: solid;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 230px;
+    top: 10px;
+    display: block;
+  }
+
+  input::-moz-placeholder {
+    /*placeholder*/
+    color: black;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  input:-ms-input-placeholder {
+    /*placeholder*/
+    color: black;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  input::placeholder {
+    /*placeholder*/
+    color: black;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  input:focus {
+    background: rgba(150, 2, 155, 0.418);
+    transform: scale(1.05);
+  }
+
+  input:invalid {
+    border: 2px solid red;
+  }
+
+  input[type=submit] {
+    /*buton log in*/
+    background-color: #7c0462;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    box-shadow: 1px 1px 8px 1px #0c0b0b;
+    margin: 0.5px;
+    margin-left: 100px;
+    margin-top: 60px;
+    border: 80px;
+    width: 200px;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    top: 40px;
+    left: 190px;
+  }
+
+  hr {
+    position: relative;
+    top: 55px;
+  }
+
+  input[type=submit]:hover {
+    background-color: #760445;
+    cursor: pointer;
+  }
+
+  input[type=button] {
+    /*buton sign up*/
+    background-color: #7c0462;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    box-shadow: 1px 1px 8px 1px #0c0b0b;
+    margin: 0.5px;
+    margin-left: 100px;
+    border: 80px;
+    width: 200px;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    top: 80px;
+    left: 190px;
+  }
+
+  input[type=button]:hover {
+    background-color: #760445;
+    cursor: pointer;
+  }
+
+  footer {
+    /*footer*/
+    position: relative;
+    top: 450px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #7c0462;
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+  }
+
+  .footer-wrapper {
+    /*footer-wrapper*/
+    width: 100%;
+    position: absolute;
+  }
+
+  #logo-footer {
+    /*logo-footer*/
+    width: 200px;
+    height: 200px;
+    border-radius: 60%;
+    box-shadow: 4px 4px 25px 2px black;
+    position: absolute;
+    top: 30px;
+    left: 150px;
+  }
+
+  .footer-lower-deck {
+    /*footer-lower-deck*/
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    position: absolute;
+    top: 270px;
+    left: 270px;
+    font-size: 20px;
+  }
+
+  .location {
+    /*location*/
+    width: 200px;
+    height: 130px;
+    margin: 10px;
+    display: block;
+    position: absolute;
+    left: 240px;
+    top: -200px;
+  }
+
+  .contact {
+    /*contact*/
+    width: 250px;
+    height: 190px;
+    margin: 10px;
+    display: block;
+    padding: 10px;
+    position: absolute;
+    top: -210px;
+    left: 550px;
+  }
+
+  .social-media-links {
+    /*social-media-links*/
+    width: 320px;
+    height: 80px;
+    padding: 10px;
+    display: flex;
+    position: absolute;
+    top: -210px;
+    left: 910px;
+    margin: 10px;
+  }
+
+  a {
+    /* a links*/
+    color: white;
+    padding: 10px;
+    position: relative;
+    left: -1px;
+    top: -1px;
+  }
+
+  .social-media-links a {
+    color: white;
+    padding: 10px;
+    position: relative;
+    left: -95px;
+    top: 20px;
+  }
+
+  a:hover {
+    color: white;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+  .social-logo:hover {
+    /*iconite social media */
+    transform: scale(2);
+  }
+}/*# sourceMappingURL=style6.css.map */
